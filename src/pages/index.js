@@ -46,9 +46,9 @@ const IndexPage = () => {
             <span>Student at <a href="https://hw.com">Harvard-Westlake</a></span>
           </div>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/justinsunyt/"><Linkedin className="icon"/></a>
-            <a href="https://github.com/justinsunyt"><GitHub className="icon"/></a>
-            <a href="mailto:justinsunyt@gmail.com"><Mail className="icon"/></a>
+            <a href="https://www.linkedin.com/in/justinsunyt/" aria-label="Linkedin"><Linkedin className="icon"/></a>
+            <a href="https://github.com/justinsunyt" aria-label="GitHub"><GitHub className="icon"/></a>
+            <a href="mailto:justinsunyt@gmail.com" aria-label="Mail"><Mail className="icon"/></a>
           </div>
         </div>
           <Img
