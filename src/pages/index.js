@@ -31,7 +31,6 @@ const IndexPage = () => {
           property="og:title"
           content="Justin Sun"
         />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
       </Helmet>
       <div className="banner">
         <div className="column">

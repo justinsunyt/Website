@@ -27,7 +27,16 @@ module.exports = {
         icon: `src/images/Logo.png`,
       },
     },
-    "gatsby-plugin-sass",
+    'gatsby-plugin-sass',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto`,
+        ],
+        display: 'swap'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
