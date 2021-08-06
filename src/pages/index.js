@@ -41,9 +41,11 @@ const IndexPage = () => {
             Entrepreneur, Developer, Creator
           </div>
           <div className="description">
-            <span>Founder at <a href="https://getfocal.app">Focal</a></span>
-            <span>CTO at <a href="https://leadersunitedforchange.org">Leaders United for Change</a></span>
-            <span>Student at <a href="https://hw.com">Harvard-Westlake</a></span>
+            <span><a href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/">2021 VEX World Champion</a></span>
+            <span><a href="https://www.hw.com">Harvard-Westlake '22</a></span>
+            <span><a href="https://getfocal.app">Founder at Focal</a></span>
+            <span><a href="https://twitch.tv/gamersunitedforchange">Co-Founder at GUC</a></span>
+            <span><a href="https://leadersunitedforchange.org">CTO at LUC</a></span>
           </div>
           <div className="icons">
             <a href="https://www.linkedin.com/in/justinsunyt/" aria-label="Linkedin"><Linkedin className="icon"/></a>
