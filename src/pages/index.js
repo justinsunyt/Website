@@ -42,10 +42,9 @@ const IndexPage = () => {
           </div>
           <div className="description">
             <span><a href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/">2021 VEX World Champion</a></span>
-            <span><a href="https://www.hw.com">Harvard-Westlake '22</a></span>
-            <span><a href="https://getfocal.app">Founder at Focal</a></span>
-            <span><a href="https://twitch.tv/gamersunitedforchange">Co-Founder at GUC</a></span>
-            <span><a href="https://leadersunitedforchange.org">CTO at LUC</a></span>
+            <span><a href="https://getfocal.app">Founder and Developer at Focal</a></span>
+            <span><a href="https://leadersunitedforchange.org">CTO and Head of CS at LUC</a></span>
+            <span><a href="https://twitch.tv/gamersunitedforchange">Co-Founder and Streamer at GUC</a></span>
           </div>
           <div className="icons">
             <a href="https://www.linkedin.com/in/justinsunyt/" aria-label="Linkedin"><Linkedin className="icon"/></a>
