@@ -56,8 +56,8 @@ const IndexPage = () => {
                 </a>
               </span>
               <span>
-                <a href="https://twitch.tv/gamersunitedforchange">
-                  Co-Founder and Streamer at GUC
+                <a href="https://interversemedia.org">
+                  Senior Engineer and Tutor at Interverse
                 </a>
               </span>
             </div>

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <Fade duration={400} delay={600}>
-        <div>© 2021 Justin Sun</div>
+        <div>© 2022 Justin Sun</div>
       </Fade>
     </footer>
   )
