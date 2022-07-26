@@ -36,7 +36,7 @@ const IndexPage = () => {
             <div className="title">Hey! I'm Justin.</div>
           </Fade>
           <Fade up duration={400} delay={150}>
-            <div className="subtitle">Entrepreneur, Developer, Creator</div>
+            <div className="subtitle">CS + Finance @ UPenn M&T</div>
           </Fade>
           <Fade up duration={400} delay={300}>
             <div className="description">
