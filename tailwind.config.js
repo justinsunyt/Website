@@ -5,9 +5,6 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      sans: "Roboto Mono",
-    },
     extend: {
       colors: {
         white: "#fefefe",

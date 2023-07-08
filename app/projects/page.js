@@ -14,7 +14,7 @@ export default function Projects() {
         vivi - social alarm clock
       </a>
       <a className="mb-2" href="https://www.youtube.com/watch?v=39aLnCRQJ8A">
-        62B BuffMobile - world champion robot
+        BuffMobile - world champion robot
       </a>
       <a href="https://github.com/justinsunyt/floatr/">
         floatr - student community forum
