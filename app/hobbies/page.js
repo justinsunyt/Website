@@ -19,10 +19,10 @@ export default function Hobbies() {
         Music - KR&B, J-rock, jazz, classical
       </a>
       <a className="mb-2" href="https://discord.gg/EeU7U5y7">
-        Gaming - UPenn VALORANT
+        Gaming - Penn Esports
       </a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        Gym - 160 BW, 185 bench
+        Gym - 165 BW, 205 bench
       </a>
     </div>
   );

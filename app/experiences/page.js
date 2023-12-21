@@ -37,7 +37,7 @@ export default function Experiences() {
         <a className="inline sm:hidden" href="https://www.grcglobalgroup.com/">
           GRC
         </a>
-        <span>2022 -</span>
+        <span>2022 - 2023</span>
       </div>
       <div className="w-full flex justify-between mb-2">
         <a className="hidden sm:inline" href="https://getfocal.app">
