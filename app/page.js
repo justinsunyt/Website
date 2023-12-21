@@ -19,7 +19,7 @@ export default function Home() {
     <div className="h-full container mx-auto max-w-screen-lg px-6 flex flex-col justify-center items-start">
       <div className="mb-2">Justin Sun 孙盈廷</div>
       <div className="mb-2">CS + Wharton @ UPenn M&T</div>
-      <div className="mb-2">NYC, Philly, LA, Shanghai</div>
+      <div className="mb-2">Philly, LA, Shanghai</div>
       <div className="mb-2">
         <a href="https://twitter.com/justinsunyt">Twitter</a> |{" "}
         <a href="https://linkedin.com/in/justinsunyt/">LinkedIn</a> |{" "}

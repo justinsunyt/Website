@@ -16,13 +16,13 @@ export default function Hobbies() {
         className="mb-2"
         href="https://open.spotify.com/user/21ot4oj3gvnedtvlhzlfetgoq?si=61c5c3c6d6fc4beb"
       >
-        Music - KR&B, J-rock, jazz, classical
+        Music - KR&B, J-rock, jazz
       </a>
-      <a className="mb-2" href="https://discord.gg/EeU7U5y7">
+      <a className="mb-2" href="https://discord.gg/XCyZJUSCpz">
         Gaming - Penn Esports
       </a>
       <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-        Gym - 165 BW, 205 bench
+        Gym - 165 BW, 200 bench
       </a>
     </div>
   );
