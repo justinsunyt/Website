@@ -1,6 +1,5 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { Providers } from "./providers";
 
 export const robotoMono = localFont({
   src: "./RobotoMono.ttf",
@@ -17,11 +16,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full" suppressHydrationWarning>
       <body
         className={
-          "h-full bg-white dark:bg-black text-black dark:text-white text-base " +
+          "h-full bg-black dark:bg-black text-black text-base " +
           robotoMono.className
         }
       >
-        <Providers>{children}</Providers>
+        {children}
       </body>
     </html>
   );

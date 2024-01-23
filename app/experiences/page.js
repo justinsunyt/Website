@@ -1,67 +1,110 @@
 import Link from "next/link";
+import Image from "next/image";
+import Header from "../components/header";
+import penn from "../../images/Penn.png";
+import labs from "../../images/Labs.svg";
+import per from "../../images/PER.png";
+import focal from "../../images/Focal.jpeg";
+import vex from "../../images/62.png";
 
 export default function Experiences() {
   return (
-    <div className="h-full container mx-auto max-w-screen-lg px-6 flex flex-col justify-center items-start">
-      <div className="mb-2">
-        <Link href="/">{"<"} Back</Link>
-      </div>
-      <div className="w-full flex justify-between mb-2">
-        <a className="hidden sm:inline" href="https://pennlabs.org/">
-          iOS Developer @ Penn Labs
+    <div className="h-full w-full">
+      <Header white={true} />
+      <div className="mt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
+        <a className="flex mb-8">
+          <div className="w-20 h-20 mr-4 aspect-square relative">
+            <Image
+              src={penn}
+              fill={true}
+              alt="UPenn M&T"
+              style={{
+                objectFit: "contain",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="text-lg">CS + Wharton</div>
+            <div>UPenn M&T</div>
+            <div>2022 -</div>
+          </div>
         </a>
-        <a className="inline sm:hidden" href="https://pennlabs.org/">
-          Penn Labs
+        <a className="flex mb-8" href="https://pennlabs.org/">
+          <div className="w-20 h-20 mr-4 aspect-square relative">
+            <Image
+              src={labs}
+              fill={true}
+              alt="Penn Labs"
+              style={{
+                objectFit: "contain",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="text-lg">iOS & Backend Developer</div>
+            <div>Penn Labs</div>
+            <div>2023 -</div>
+          </div>
         </a>
-        <span>2023 -</span>
-      </div>
-      <div className="w-full flex justify-between mb-2">
+        <a className="flex mb-8" href="https://www.pennelectricracing.com/">
+          <div className="w-20 h-20 mr-4 aspect-square relative">
+            <Image
+              src={per}
+              fill={true}
+              alt="Penn Electric Racing"
+              style={{
+                objectFit: "contain",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="text-lg">Vehicle Dynamics Engineer</div>
+            <div>Penn Electric Racing</div>
+            <div>2022 -</div>
+          </div>
+        </a>
+        <a className="flex mb-8" href="https://getfocal.app/">
+          <div className="w-20 h-20 mr-4 aspect-square relative">
+            <Image
+              src={focal}
+              fill={true}
+              alt="Focal"
+              style={{
+                objectFit: "contain",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="text-lg">Founder</div>
+            <div>Focal</div>
+            <div>2020 - 2023</div>
+          </div>
+        </a>
         <a
-          className="hidden sm:inline"
-          href="https://www.pennelectricracing.com/"
-        >
-          Mechanical Engineer @ Penn Electric Racing
-        </a>
-        <a
-          className="inline sm:hidden"
-          href="https://www.pennelectricracing.com/"
-        >
-          Penn Electric Racing
-        </a>
-        <span>2022 -</span>
-      </div>
-      <div className="w-full flex justify-between mb-2">
-        <a className="hidden sm:inline" href="https://www.grcglobalgroup.com/">
-          Associate Consultant @ GRC
-        </a>
-        <a className="inline sm:hidden" href="https://www.grcglobalgroup.com/">
-          GRC
-        </a>
-        <span>2022 - 2023</span>
-      </div>
-      <div className="w-full flex justify-between mb-2">
-        <a className="hidden sm:inline" href="https://getfocal.app">
-          Founder @ Focal
-        </a>
-        <a className="inline sm:hidden" href="https://getfocal.app">
-          Focal
-        </a>
-        <span>2020 - 2023</span>
-      </div>
-      <div className="w-full flex justify-between">
-        <a
-          className="hidden sm:inline"
+          className="flex mb-8"
           href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/"
         >
-          Captain @ VEX 62B
+          <div className="w-20 h-20 mr-4 aspect-square relative">
+            <Image
+              src={vex}
+              fill={true}
+              alt="VEX 62B"
+              style={{
+                objectFit: "contain",
+                overflow: "hidden",
+              }}
+            />
+          </div>
+          <div className="flex flex-col">
+            <div className="text-lg">Captain</div>
+            <div>VEX 62B</div>
+            <div>2018 - 2022</div>
+          </div>
         </a>
-        <a
-          className="inline sm:hidden"
-          href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/"
-        >
-          VEX 62B
-        </a>
-        <span>2018 - 2022</span>
       </div>
     </div>
   );
