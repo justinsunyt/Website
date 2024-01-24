@@ -25,7 +25,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-col">
             <div className="text-lg">Capybara.AI</div>
-            <div>Ccoming soon</div>
+            <div>Coming soon</div>
             <div>2023</div>
           </div>
         </a>
