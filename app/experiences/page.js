@@ -12,8 +12,8 @@ export default function Experiences() {
     <div className="h-full w-full">
       <Header white={true} />
       <div className="pt-12 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
-        <a className="flex items-center mb-8">
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+        <a className="flex items-center mb-12">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={penn}
               fill={true}
@@ -30,8 +30,8 @@ export default function Experiences() {
             <div className="text-sm">2022 -</div>
           </div>
         </a>
-        <a className="flex items-center mb-8" href="https://pennlabs.org/">
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+        <a className="flex items-center mb-12" href="https://pennlabs.org/">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={labs}
               fill={true}
@@ -49,10 +49,10 @@ export default function Experiences() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://www.pennelectricracing.com/"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={per}
               fill={true}
@@ -69,8 +69,8 @@ export default function Experiences() {
             <div className="text-sm">2022 -</div>
           </div>
         </a>
-        <a className="flex items-center mb-8" href="https://getfocal.app/">
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+        <a className="flex items-center mb-12" href="https://getfocal.app/">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={focal}
               fill={true}
@@ -88,10 +88,10 @@ export default function Experiences() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={vex}
               fill={true}

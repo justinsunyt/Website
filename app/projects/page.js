@@ -12,8 +12,8 @@ export default function Projects() {
     <div className="h-full w-full">
       <Header white={true} />
       <div className="pt-12 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
-        <a className="flex items-center mb-8">
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+        <a className="flex items-center mb-12">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={capybara}
               fill={true}
@@ -33,10 +33,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/justinsunyt/rajivai-platform"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative flex justify-center items-center text-6xl">
+          <div className="w-16 h-16 mr-4 aspect-square relative flex justify-center items-center text-5xl">
             👨‍🏫
           </div>
           <div className="flex flex-col">
@@ -48,10 +48,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/benjmnxu/BirdGuess"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative flex justify-center items-center text-6xl">
+          <div className="w-16 h-16 mr-4 aspect-square relative flex justify-center items-center text-6xl">
             <Image
               src="https://i.imgur.com/zy135Dr.png"
               fill={true}
@@ -71,10 +71,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/justinsunyt/osus"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={osus}
               fill={true}
@@ -93,8 +93,8 @@ export default function Projects() {
             <div className="text-sm">Java, Swing</div>
           </div>
         </a>
-        <a className="flex items-center mb-8" href="https://getfocal.app/">
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+        <a className="flex items-center mb-12" href="https://getfocal.app/">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={focal}
               fill={true}
@@ -114,10 +114,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/justinsunyt/vivi"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={vivi}
               fill={true}
@@ -137,10 +137,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/justinsunyt/62B_ChangeUp"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={vex}
               fill={true}
@@ -160,10 +160,10 @@ export default function Projects() {
           </div>
         </a>
         <a
-          className="flex items-center mb-8"
+          className="flex items-center mb-12"
           href="https://github.com/justinsunyt/floatr"
         >
-          <div className="w-20 h-20 mr-4 aspect-square relative">
+          <div className="w-16 h-16 mr-4 aspect-square relative">
             <Image
               src={floatr}
               fill={true}
