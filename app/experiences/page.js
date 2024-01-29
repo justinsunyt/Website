@@ -11,8 +11,8 @@ export default function Experiences() {
   return (
     <div className="h-full w-full">
       <Header white={true} />
-      <div className="mt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
-        <a className="flex mb-8">
+      <div className="pt-24 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
+        <a className="flex items-center mb-8">
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image
               src={penn}
@@ -30,7 +30,7 @@ export default function Experiences() {
             <div>2022 -</div>
           </div>
         </a>
-        <a className="flex mb-8" href="https://pennlabs.org/">
+        <a className="flex items-center mb-8" href="https://pennlabs.org/">
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image
               src={labs}
@@ -48,7 +48,10 @@ export default function Experiences() {
             <div>2023 -</div>
           </div>
         </a>
-        <a className="flex mb-8" href="https://www.pennelectricracing.com/">
+        <a
+          className="flex items-center mb-8"
+          href="https://www.pennelectricracing.com/"
+        >
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image
               src={per}
@@ -66,7 +69,7 @@ export default function Experiences() {
             <div>2022 -</div>
           </div>
         </a>
-        <a className="flex mb-8" href="https://getfocal.app/">
+        <a className="flex items-center mb-8" href="https://getfocal.app/">
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image
               src={focal}
@@ -85,7 +88,7 @@ export default function Experiences() {
           </div>
         </a>
         <a
-          className="flex mb-8"
+          className="flex items-center mb-8"
           href="https://hwchronicle.com/101847/news/robotics-team-62b-wins-vex-robotics-world-championship/"
         >
           <div className="w-20 h-20 mr-4 aspect-square relative">

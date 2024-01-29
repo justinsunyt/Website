@@ -17,7 +17,7 @@ export default function Hobbies() {
   return (
     <div className="h-full w-full">
       <Header white={true} />
-      <div className="mt-12 container mx-auto max-w-screen-xl px-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="pt-12 container mx-auto max-w-screen-xl px-6 grid grid-cols-2 md:grid-cols-3 gap-4">
         <Image src={arashiyama4} alt="Arashiyama" layout="responsive" />
         <Image src={fujiyoshida1} alt="Fujiyoshida" layout="responsive" />
         <Image src={izu1} alt="Izu" layout="responsive" />
