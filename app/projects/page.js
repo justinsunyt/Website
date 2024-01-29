@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div className="h-full w-full">
       <Header white={true} />
-      <div className="pt-24 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
+      <div className="pt-12 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
         <a className="flex items-center mb-8">
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image

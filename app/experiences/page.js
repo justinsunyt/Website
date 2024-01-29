@@ -11,7 +11,7 @@ export default function Experiences() {
   return (
     <div className="h-full w-full">
       <Header white={true} />
-      <div className="pt-24 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
+      <div className="pt-12 pb-8 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white">
         <a className="flex items-center mb-8">
           <div className="w-20 h-20 mr-4 aspect-square relative">
             <Image
@@ -27,7 +27,7 @@ export default function Experiences() {
           <div className="flex flex-col">
             <div className="text-lg">CS + Wharton</div>
             <div>UPenn M&T</div>
-            <div>2022 -</div>
+            <div className="text-sm">2022 -</div>
           </div>
         </a>
         <a className="flex items-center mb-8" href="https://pennlabs.org/">
@@ -45,7 +45,7 @@ export default function Experiences() {
           <div className="flex flex-col">
             <div className="text-lg">iOS & Backend Developer</div>
             <div>Penn Labs</div>
-            <div>2023 -</div>
+            <div className="text-sm">2023 -</div>
           </div>
         </a>
         <a
@@ -66,7 +66,7 @@ export default function Experiences() {
           <div className="flex flex-col">
             <div className="text-lg">Vehicle Dynamics Engineer</div>
             <div>Penn Electric Racing</div>
-            <div>2022 -</div>
+            <div className="text-sm">2022 -</div>
           </div>
         </a>
         <a className="flex items-center mb-8" href="https://getfocal.app/">
@@ -84,7 +84,7 @@ export default function Experiences() {
           <div className="flex flex-col">
             <div className="text-lg">Founder</div>
             <div>Focal</div>
-            <div>2020 - 2023</div>
+            <div className="text-sm">2020 - 2023</div>
           </div>
         </a>
         <a
@@ -105,7 +105,7 @@ export default function Experiences() {
           <div className="flex flex-col">
             <div className="text-lg">Captain</div>
             <div>VEX 62B</div>
-            <div>2018 - 2022</div>
+            <div className="text-sm">2018 - 2022</div>
           </div>
         </a>
       </div>
