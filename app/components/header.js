@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   return (
     <motion.div
-      className="pt-12 container mx-auto max-w-screen-xl px-6 flex flex-col md:flex-row justify-between items-start text-2xl relative mb-2 md:mb-0 text-primary"
+      className="pt-12 container mx-auto max-w-screen-xl px-6 flex flex-col md:flex-row justify-between items-start text-xl relative mb-2 md:mb-0 text-primary"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

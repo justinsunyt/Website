@@ -1,27 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
 import { motion } from "framer-motion";
 import Header from "./components/header";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Photos from "./components/photos";
+import Link from "next/link";
 
 export default function Home() {
-  const [y, setY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const newY = Math.max(0, (window.scrollY / window.innerHeight) * 500);
-      setY(newY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="h-full w-full">
       <motion.div
@@ -36,35 +22,31 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          style={{ y }}
         >
           <div className="flex flex-col items-start">
-            <div
-              onClick={() => {
-                const projects = document.getElementById("about");
-                projects?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light transition hover:opacity-90 hover:translate-x-1 cursor-pointer"
-            >
-              About
+            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
+              <Link
+                href="#about"
+                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
+              >
+                About
+              </Link>
             </div>
-            <div
-              onClick={() => {
-                const projects = document.getElementById("projects");
-                projects?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light transition hover:opacity-90 hover:translate-x-1 cursor-pointer"
-            >
-              Projects
+            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
+              <Link
+                href="#projects"
+                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
+              >
+                Projects
+              </Link>
             </div>
-            <div
-              onClick={() => {
-                const projects = document.getElementById("photos");
-                projects?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light transition hover:opacity-90 hover:translate-x-1 cursor-pointer"
-            >
-              Photos
+            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
+              <Link
+                href="#photos"
+                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
+              >
+                Photos
+              </Link>
             </div>
           </div>
         </motion.div>
