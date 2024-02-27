@@ -1,4 +1,4 @@
-import { Twitter, Linkedin, GitHub, Mail } from "react-feather";
+import { Twitter, Linkedin, Github, Mail } from "feather-icons-react";
 import { motion } from "framer-motion";
 
 export default function Header() {
@@ -12,12 +12,6 @@ export default function Header() {
       <div>Justin Sun 孙盈廷</div>
       <div className="mt-4 md:mt-0 flex items-center space-x-8">
         <a
-          href="https://twitter.com/justinsunyt"
-          className="transition hover:opacity-90 hover:-translate-y-0.5"
-        >
-          <Twitter size={20} />
-        </a>
-        <a
           href="https://linkedin.com/in/justinsunyt/"
           className="transition hover:opacity-90 hover:-translate-y-0.5"
         >
@@ -27,7 +21,13 @@ export default function Header() {
           href="https://github.com/justinsunyt"
           className="transition hover:opacity-90 hover:-translate-y-0.5"
         >
-          <GitHub size={20} />
+          <Github size={20} />
+        </a>
+        <a
+          href="https://twitter.com/justinsunyt"
+          className="transition hover:opacity-90 hover:-translate-y-0.5"
+        >
+          <Twitter size={20} />
         </a>
         <a
           href="mailto:justinsunyt@gmail.com"

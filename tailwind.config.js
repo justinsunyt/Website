@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin");
+
 module.exports = {
   content: [
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,5 +13,27 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addComponents }) {
+      addComponents({
+        ".glass": {
+          borderRadius: "2rem",
+          borderWidth: "1px",
+          borderColor: "transparent",
+          transitionDuration: "150ms",
+          "&:hover": {
+            transform: "translateY(-0.125rem)",
+          },
+        },
+      });
+    }),
+  ],
+  safelist: [
+    "from-[#d78dea]",
+    "to-[#9c8ade]",
+    "from-[#9c8ade]",
+    "to-[#6387d3]",
+    "from-[#6387d3]",
+    "to-[#2d84c8]",
+  ],
 };

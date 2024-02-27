@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "./header";
 import capybara from "../../images/Capybara.png";
 import osus from "../../images/osus.png";
 import focal from "../../images/Focal.jpeg";
@@ -11,9 +10,15 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="pt-12 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
     >
-      <a className="flex items-center mb-12">
+      <div className="text-6xl md:text-8xl font-bold">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
+          Projects
+        </span>{" "}
+        💻
+      </div>
+      <a className="mt-8 flex items-center mb-12">
         <div className="w-16 h-16 mr-4 aspect-square relative">
           <Image
             src={capybara}

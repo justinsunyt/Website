@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header from "./header";
 import akihabara1 from "../../images/Akihabara-1.jpg";
 import arashiyama4 from "../../images/Arashiyama-4.jpg";
 import citywalk3 from "../../images/Citywalk-3.jpg";

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import Header from "./components/header";
+import About from "./components/about";
 import Projects from "./components/projects";
 import Photos from "./components/photos";
 
@@ -38,7 +39,13 @@ export default function Home() {
           style={{ y }}
         >
           <div className="flex flex-col items-start">
-            <div className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
+            <div
+              onClick={() => {
+                const projects = document.getElementById("about");
+                projects?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light transition hover:opacity-90 hover:translate-x-1 cursor-pointer"
+            >
               About
             </div>
             <div
@@ -62,6 +69,7 @@ export default function Home() {
           </div>
         </motion.div>
       </motion.div>
+      <About />
       <Projects />
       <Photos />
     </div>
