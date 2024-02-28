@@ -1,54 +1,68 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "./components/header";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Photos from "./components/photos";
 import Link from "next/link";
+import Image from "next/image";
+import fuji from "../images/Fuji.jpg";
+import fujiTrans from "../images/Fuji_transparent.png";
+import FeatherIcon from "feather-icons-react";
 
 export default function Home() {
+  let [fade, setFade] = useState(false);
   return (
     <div className="h-full w-full">
       <motion.div
-        className={`h-full w-full bg-[url('../images/Fuji.jpg')] bg-cover bg-center bg-fixed`}
+        className="h-full w-full overflow-hidden filter blur-[0px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.15 }}
       >
-        <Header color={false} />
+        <div
+          className={`${
+            fade ? "opacity-90" : "opacity-100"
+          } h-screen w-full absolute transition duration-500 ease-out`}
+        >
+          <Image src={fuji} layout={"fill"} objectFit={"cover"} />
+        </div>
         <motion.div
-          className="mt-16 container mx-auto max-w-screen-xl px-6"
+          className={`${
+            fade && "-translate-y-[30vh]"
+          } mt-[60vh] absolute left-0 right-0 flex justify-center text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.primary-alt),theme(colors.primary),theme(colors.primary-alt))] bg-[length:200%_auto] animate-gradient transition duration-500 ease-out`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="flex flex-col items-start">
-            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
-              <Link
-                href="#about"
-                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
-              >
-                About
-              </Link>
-            </div>
-            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
-              <Link
-                href="#projects"
-                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
-              >
-                Projects
-              </Link>
-            </div>
-            <div className="transition hover:opacity-90 hover:translate-x-1 cursor-pointer">
-              <Link
-                href="#photos"
-                className="text-6xl md:text-8xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light"
-              >
-                Photos
-              </Link>
-            </div>
-          </div>
+          Justin Sun
+        </motion.div>
+        <div
+          className={`${
+            fade && "filter drop-shadow-[0rem_0rem_4rem_#ffffffff]"
+          } h-screen w-full absolute transition duration-500 ease-out`}
+        >
+          <Image src={fujiTrans} layout={"fill"} objectFit={"cover"} />
+        </div>
+        <Header color={false} />
+        <motion.div
+          className="mt-[calc(30vh-3rem)] md:mt-[calc(30vh-2rem)] absolute left-0 right-0 flex justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+        >
+          <Link
+            href="#about"
+            onMouseEnter={() => setFade(true)}
+            onMouseLeave={() => setFade(false)}
+            className={`${
+              fade ? "opacity-0" : "opacity-100"
+            } px-64 py-12 text-6xl font-medium text-primary transition duration-500 ease-out animate-wiggle`}
+          >
+            👋
+          </Link>
         </motion.div>
       </motion.div>
       <About />

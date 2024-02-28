@@ -9,7 +9,20 @@ module.exports = {
     extend: {
       colors: {
         primary: "#000a20d0",
-        "primary-light": "#000a2090",
+        "primary-alt": "#025269d0",
+      },
+      animation: {
+        gradient: "gradient 2s linear infinite",
+        wiggle: "wiggle 500ms ease infinite",
+      },
+      keyframes: {
+        gradient: {
+          to: { "background-position": "200% center" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-5deg)" },
+          "50%": { transform: "rotate(5deg)" },
+        },
       },
     },
   },
