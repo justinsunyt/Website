@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         primary: "#000a20d0",
         "primary-alt": "#025269d0",
+        secondary: "#d78dea",
       },
       animation: {
         gradient: "gradient 2s linear infinite",
@@ -28,25 +29,12 @@ module.exports = {
   },
   plugins: [
     plugin(function ({ addComponents }) {
-      addComponents({
-        ".glass": {
-          borderRadius: "2rem",
-          borderWidth: "1px",
-          borderColor: "transparent",
-          transitionDuration: "150ms",
-          "&:hover": {
-            transform: "translateY(-0.125rem)",
-          },
-        },
-      });
+      addComponents({});
     }),
   ],
   safelist: [
-    "from-[#d78dea]",
-    "to-[#9c8ade]",
-    "from-[#9c8ade]",
-    "to-[#6387d3]",
-    "from-[#6387d3]",
-    "to-[#2d84c8]",
+    "bg-[linear-gradient(to_right,#d78dea,#9c8ade,#d78dea)]",
+    "bg-[linear-gradient(to_right,#9c8ade,#6387d3,#9c8ade)]",
+    "bg-[linear-gradient(to_right,#6387d3,#2d84c8,#6387d3)]",
   ],
 };

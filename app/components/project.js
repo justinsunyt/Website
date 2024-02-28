@@ -3,9 +3,9 @@ export default function Project(props) {
     <a className="flex items-center mb-12">
       <div className="w-16 h-16 mr-4 aspect-square relative">
         <Image
-          src={capybara}
+          src={props.imgSrc}
           fill={true}
-          alt="Capybara.AI"
+          alt={props.imgAlt}
           style={{
             objectFit: "contain",
             overflow: "hidden",
@@ -14,10 +14,10 @@ export default function Project(props) {
       </div>
       <div className="flex flex-col">
         <div className="text-lg">
-          Capybara.AI <span className="text-sm">2023</span>
+          {props.name} <span className="text-sm">{props.year}</span>
         </div>
-        <div>AI college counselor</div>
-        <div className="text-sm">GPT-4, Next.js, FastAPI, Pinecone</div>
+        <div>{props.subtitle}</div>
+        <div className="text-sm">{props.description}</div>
       </div>
     </a>
   );

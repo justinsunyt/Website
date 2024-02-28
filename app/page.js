@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Header from "./components/header";
+import Nav from "./components/nav";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Photos from "./components/photos";
@@ -10,12 +11,12 @@ import Link from "next/link";
 import Image from "next/image";
 import fuji from "../images/Fuji.jpg";
 import fujiTrans from "../images/Fuji_transparent.png";
-import FeatherIcon from "feather-icons-react";
 
 export default function Home() {
   let [fade, setFade] = useState(false);
   return (
     <div className="h-full w-full">
+      <Nav />
       <motion.div
         className="h-full w-full overflow-hidden filter blur-[0px]"
         initial={{ opacity: 0 }}
@@ -47,6 +48,7 @@ export default function Home() {
           <Image src={fujiTrans} layout={"fill"} objectFit={"cover"} />
         </div>
         <Header color={false} />
+
         <motion.div
           className="mt-[calc(30vh-3rem)] md:mt-[calc(30vh-2rem)] absolute left-0 right-0 flex justify-center"
           initial={{ opacity: 0 }}

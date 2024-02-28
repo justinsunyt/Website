@@ -5,18 +5,13 @@ import Link from "next/link";
 export default function Header() {
   return (
     <motion.div
-      className="pt-12 container mx-auto max-w-screen-xl px-6 flex flex-col md:flex-row justify-between items-start text-xl absolute left-0 right-0 mb-2 md:mb-0 text-primary"
+      className="pt-8 mx-auto px-6 flex flex-col md:flex-row justify-between items-start text-xl absolute left-0 right-0 text-primary"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
       <div>Justin Sun 孙盈廷</div>
-      <div className="md:absolute md:transform md:-translate-x-1/2 md:left-1/2">
-        <Link href="#about">About</Link> |{" "}
-        <Link href="#projects">Projects</Link> |{" "}
-        <Link href="#photos">Photos</Link>
-      </div>
-      <div className="mt-2 md:mt-0 flex items-center space-x-8">
+      <div className="mt-2 md:mt-0 flex items-center space-x-6">
         <a
           href="https://linkedin.com/in/justinsunyt/"
           className="transition hover:opacity-90 hover:-translate-y-0.5"

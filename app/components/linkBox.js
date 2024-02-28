@@ -3,7 +3,7 @@ import FeatherIcon from "feather-icons-react";
 export default function LinkBox(props) {
   return (
     <a
-      className={`glass bg-gradient-to-r from-[${props.left}] to-[${props.right}]`}
+      className={`border border-transparent rounded-full transition duration-150 hover:-translate-y-1 bg-[linear-gradient(to_right,${props.left},${props.right},${props.left})] bg-[length:200%_auto] animate-gradient`}
       href={props.url}
     >
       <div className="px-4 py-2 rounded-full w-full h-full bg-black flex items-center">

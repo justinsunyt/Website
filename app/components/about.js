@@ -1,12 +1,13 @@
 import Image from "next/image";
 import justin from "../../images/Justin.jpg";
 import LinkBox from "./linkBox";
+import Link from "next/link";
 
 export default function About() {
   return (
     <div
       id="about"
-      className="pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
@@ -26,23 +27,33 @@ export default function About() {
           <div className="mt-4">
             I love building on the frontier of technology and learning about the
             latest advancements, and have been doing so through full-stack
-            engineering and machine learning. I built <a>SitDowns</a>{" "}
-            (Mixtral-powered Chrome extension, Penn Gen AI Hackathon Nomic AI
-            Prize), <a>RajivAI</a>
-            (multi-agent exam generator, PennApps), <a>Focal</a> (screen time
-            productivity tracker, 100K downloads), and Capybara.AI (the world's
-            best AI college counselor, coming soon).
+            engineering and machine learning. I built{" "}
+            <a className="text-secondary">SitDowns</a> (Mixtral-powered Chrome
+            extension, Penn Gen AI Hackathon Nomic AI Prize),{" "}
+            <a className="text-secondary">RajivAI</a> (multi-agent exam
+            generator, PennApps), <a className="text-secondary">Focal</a>{" "}
+            (screen time productivity tracker, 100K downloads), and Capybara.AI
+            (the world's best AI college counselor, coming soon).
           </div>
           <div className="mt-4">
             At school, I'm developing Penn's official student apps with
-            thousands of daily users at PennMobile and Office Hours Queue,
-            building electric race cars at Penn Electric Racing, and leading
-            Penn's biggest gaming community at Penn Esports.
+            thousands of daily users at{" "}
+            <a className="text-secondary">Penn Labs</a>, building electric race
+            cars at <a className="text-secondary">Penn Electric Racing</a>, and
+            leading Penn's biggest gaming community at{" "}
+            <a className="text-secondary" href="https://upennesports.org">
+              Penn Esports
+            </a>
+            .
           </div>
           <div className="mt-4">
-            In my free time, I enjoy taking photos with my digital and film
-            cameras, playing competitive Valorant with the Penn Retirement Home,
-            going to the gym, watching anime, and listening to banger music 🤩
+            In my free time, I enjoy taking{" "}
+            <Link className="text-secondary" href="#photos">
+              photos
+            </Link>{" "}
+            with my digital and film cameras, playing competitive Valorant with
+            the Penn Retirement Home, going to the gym, watching anime, and
+            listening to <a className="text-secondary">banger music</a> 🤩
           </div>
           <div className="mt-8 flex gap-x-2 gap-y-2 flex-wrap">
             <LinkBox

@@ -16,88 +16,96 @@ export default function Photos() {
   return (
     <div
       id="photos"
-      className="pt-12 pb-12 container mx-auto max-w-screen-xl px-6 grid grid-cols-2 md:grid-cols-3 gap-4"
+      className="pt-12 md:pt-24 pb-12 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
     >
-      <Image src={arashiyama4} alt="Arashiyama" layout="responsive" />
-      <Image src={fujiyoshida1} alt="Fujiyoshida" layout="responsive" />
-      <Image src={izu1} alt="Izu" layout="responsive" />
-      <div className="h-full relative">
-        <Image
-          src={shimokitazawa1}
-          alt="Shimokitazawa"
-          fill={true}
-          style={{
-            objectFit: "cover",
-            overflow: "hidden",
-          }}
-        />
+      <div className="text-6xl md:text-8xl font-bold">
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
+          Photos
+        </span>{" "}
+        📸
       </div>
-      <Image
-        src={kyoto1}
-        alt="Kyoto"
-        layout="responsive"
-        className="col-span-2"
-      />
-      <Image
-        src={tokyo7}
-        alt="Tokyo"
-        layout="responsive"
-        className="col-span-2"
-      />
-      <div className="hidden md:block h-full relative">
+      <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <Image src={arashiyama4} alt="Arashiyama" layout="responsive" />
+        <Image src={fujiyoshida1} alt="Fujiyoshida" layout="responsive" />
+        <Image src={izu1} alt="Izu" layout="responsive" />
+        <div className="h-full relative">
+          <Image
+            src={shimokitazawa1}
+            alt="Shimokitazawa"
+            fill={true}
+            style={{
+              objectFit: "cover",
+              overflow: "hidden",
+            }}
+          />
+        </div>
+        <Image
+          src={kyoto1}
+          alt="Kyoto"
+          layout="responsive"
+          className="col-span-2"
+        />
+        <Image
+          src={tokyo7}
+          alt="Tokyo"
+          layout="responsive"
+          className="col-span-2"
+        />
+        <div className="hidden md:block h-full relative">
+          <Image
+            src={tokyo10}
+            alt="Tokyo"
+            fill={true}
+            style={{
+              objectFit: "cover",
+              overflow: "hidden",
+            }}
+          />
+        </div>
+        <div className="hidden md:block h-full relative">
+          <Image
+            src={izu8}
+            alt="Izu"
+            fill={true}
+            style={{
+              objectFit: "cover",
+              overflow: "hidden",
+            }}
+          />
+        </div>
         <Image
           src={tokyo10}
           alt="Tokyo"
-          fill={true}
-          style={{
-            objectFit: "cover",
-            overflow: "hidden",
-          }}
+          layout="responsive"
+          className="block md:hidden"
         />
-      </div>
-      <div className="hidden md:block h-full relative">
         <Image
           src={izu8}
           alt="Izu"
-          fill={true}
-          style={{
-            objectFit: "cover",
-            overflow: "hidden",
-          }}
+          layout="responsive"
+          className="block md:hidden"
+        />
+        <Image
+          src={akihabara1}
+          alt="Akihabara"
+          layout="responsive"
+          className="col-span-2"
+        />
+        <Image src={citywalk7} alt="Shanghai" layout="responsive" />
+        <Image
+          src={citywalk3}
+          alt="Shanghai"
+          layout="responsive"
+          className="hidden md:block"
+        />
+        <Image src={citywalk8} alt="Shanghai" layout="responsive" />
+        <Image
+          src={citywalk3}
+          alt="Shanghai"
+          layout="responsive"
+          className="col-span-full block md:hidden"
         />
       </div>
-      <Image
-        src={tokyo10}
-        alt="Tokyo"
-        layout="responsive"
-        className="block md:hidden"
-      />
-      <Image
-        src={izu8}
-        alt="Izu"
-        layout="responsive"
-        className="block md:hidden"
-      />
-      <Image
-        src={akihabara1}
-        alt="Akihabara"
-        layout="responsive"
-        className="col-span-2"
-      />
-      <Image src={citywalk7} alt="Shanghai" layout="responsive" />
-      <Image
-        src={citywalk3}
-        alt="Shanghai"
-        layout="responsive"
-        className="hidden md:block"
-      />
-      <Image src={citywalk8} alt="Shanghai" layout="responsive" />
-      <Image
-        src={citywalk3}
-        alt="Shanghai"
-        layout="responsive"
-        className="col-span-full block md:hidden"
-      />
     </div>
   );
 }

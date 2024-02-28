@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
