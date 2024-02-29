@@ -11,7 +11,7 @@ export default function About() {
   const ref = useRef(null);
   const width = useWindowHeight();
   const isInView = useInView(ref, {
-    amount: width < 768 ? 0.3 : 0.7,
+    amount: width < 768 ? 0.2 : 0.6,
   });
   const { setCurrentSection } = useNav();
 

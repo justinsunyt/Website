@@ -11,7 +11,7 @@ import fujiTrans from "../../images/Fuji_transparent.png";
 export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: 0.3,
+    amount: 0.2,
   });
   const { setCurrentSection } = useNav();
 

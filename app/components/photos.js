@@ -18,7 +18,7 @@ import tokyo10 from "../../images/Tokyo-10.jpg";
 export default function Photos() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: 0.3,
+    amount: 0.2,
   });
   const { setCurrentSection } = useNav();
 

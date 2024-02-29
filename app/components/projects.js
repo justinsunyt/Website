@@ -16,7 +16,7 @@ import floatr from "../../images/floatr.png";
 export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, {
-    amount: 0.3,
+    amount: 0.2,
   });
   const { setCurrentSection } = useNav();
 

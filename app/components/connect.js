@@ -4,7 +4,7 @@ export default function Connect() {
   return (
     <div
       id="connect"
-      className="pt-16 md:pt-24 pb-16 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-16 md:pt-24 pb-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
