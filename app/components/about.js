@@ -1,13 +1,31 @@
+import { useRef, useEffect } from "react";
+import { useInView } from "framer-motion";
+import { useNav } from "../context/navProvider";
 import Image from "next/image";
+import Link from "next/link";
 import justin from "../../images/Justin.jpg";
 import LinkBox from "./linkBox";
-import Link from "next/link";
+import { useWindowHeight } from "@react-hook/window-size";
 
 export default function About() {
+  const ref = useRef(null);
+  const width = useWindowHeight();
+  const isInView = useInView(ref, {
+    amount: width < 768 ? 0.3 : 0.7,
+  });
+  const { setCurrentSection } = useNav();
+
+  useEffect(() => {
+    if (isInView) {
+      setCurrentSection("about");
+    }
+  }, [isInView]);
+
   return (
     <div
       id="about"
       className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">

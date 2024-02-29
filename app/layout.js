@@ -1,5 +1,7 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { NavProvider } from "./context/navProvider";
+import Nav from "./components/nav";
 
 export const gtWalsheim = localFont({
   src: [
@@ -100,7 +102,10 @@ export default function RootLayout({ children }) {
           gtWalsheim.className
         }
       >
-        {children}
+        <NavProvider>
+          <Nav />
+          {children}
+        </NavProvider>
       </body>
     </html>
   );

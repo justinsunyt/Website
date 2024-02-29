@@ -1,3 +1,6 @@
+import { useRef, useEffect } from "react";
+import { useInView } from "framer-motion";
+import { useNav } from "../context/navProvider";
 import Image from "next/image";
 import akihabara1 from "../../images/Akihabara-1.jpg";
 import arashiyama4 from "../../images/Arashiyama-4.jpg";
@@ -13,10 +16,23 @@ import tokyo7 from "../../images/Tokyo-7.jpg";
 import tokyo10 from "../../images/Tokyo-10.jpg";
 
 export default function Photos() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: 0.3,
+  });
+  const { setCurrentSection } = useNav();
+
+  useEffect(() => {
+    if (isInView) {
+      setCurrentSection("photos");
+    }
+  }, [isInView]);
+
   return (
     <div
       id="photos"
       className="pt-12 md:pt-24 pb-12 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">

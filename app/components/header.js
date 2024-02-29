@@ -1,15 +1,8 @@
 import { Twitter, Linkedin, Github, Mail } from "feather-icons-react";
-import { motion } from "framer-motion";
-import Link from "next/link";
 
 export default function Header() {
   return (
-    <motion.div
-      className="pt-8 mx-auto px-6 flex flex-col md:flex-row justify-between items-start text-xl absolute left-0 right-0 text-primary"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.3 }}
-    >
+    <div className="pt-8 mx-auto px-6 flex flex-col md:flex-row justify-between items-start text-xl absolute left-0 right-0 text-primary">
       <div>Justin Sun 孙盈廷</div>
       <div className="mt-2 md:mt-0 flex items-center space-x-6">
         <a
@@ -37,6 +30,6 @@ export default function Header() {
           <Mail size={22} />
         </a>
       </div>
-    </motion.div>
+    </div>
   );
 }

@@ -1,3 +1,6 @@
+import { useRef, useEffect } from "react";
+import { useInView } from "framer-motion";
+import { useNav } from "../context/navProvider";
 import Image from "next/image";
 import capybara from "../../images/Capybara.png";
 import osus from "../../images/osus.png";
@@ -7,10 +10,23 @@ import vex from "../../images/62.png";
 import floatr from "../../images/floatr.png";
 
 export default function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+    amount: 0.3,
+  });
+  const { setCurrentSection } = useNav();
+
+  useEffect(() => {
+    if (isInView) {
+      setCurrentSection("projects");
+    }
+  }, [isInView]);
+
   return (
     <div
       id="projects"
       className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#d78dea] to-[#2d84c8]">
