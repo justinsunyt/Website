@@ -45,33 +45,71 @@ export default function About() {
           <div className="mt-4">
             I love building on the frontier of technology and learning about the
             latest advancements, and have been doing so through full-stack
-            engineering and machine learning. I built{" "}
-            <a className="text-secondary">SitDowns</a> (Mixtral-powered Chrome
-            extension, Penn Gen AI Hackathon Nomic AI Prize),{" "}
-            <a className="text-secondary">RajivAI</a> (multi-agent exam
-            generator, PennApps), <a className="text-secondary">Focal</a>{" "}
-            (screen time productivity tracker, 100K downloads), and Capybara.AI
-            (the world's best AI college counselor, coming soon).
+            engineering and machine learning. Previously, I built{" "}
+            <a
+              className="text-secondary"
+              href="#sitdowns"
+              onClick={() => setCurrentSection("projects")}
+            >
+              SitDowns
+            </a>{" "}
+            (Mixtral-powered Chrome extension, Penn Gen AI Hackathon Nomic AI
+            Prize),{" "}
+            <a
+              className="text-secondary"
+              href="#capybara.ai"
+              onClick={() => setCurrentSection("projects")}
+            >
+              Capybara.AI
+            </a>{" "}
+            (the world's best AI college counselor), and{" "}
+            <a
+              className="text-secondary"
+              href="#focal"
+              onClick={() => setCurrentSection("projects")}
+            >
+              Focal
+            </a>{" "}
+            (screen time productivity tracker, 100K downloads).
           </div>
           <div className="mt-4">
             At school, I'm developing Penn's official student apps with
             thousands of daily users at{" "}
-            <a className="text-secondary">Penn Labs</a>, building electric race
-            cars at <a className="text-secondary">Penn Electric Racing</a>, and
-            leading Penn's biggest gaming community at{" "}
-            <a className="text-secondary" href="https://upennesports.org">
+            <a className="text-secondary" href="https://pennlabs.org/">
+              Penn Labs
+            </a>
+            , building electric race cars at{" "}
+            <a
+              className="text-secondary"
+              href="https://www.pennelectricracing.com/"
+            >
+              Penn Electric Racing
+            </a>
+            , and leading Penn's biggest gaming community at{" "}
+            <a className="text-secondary" href="https://upennesports.org/">
               Penn Esports
             </a>
             .
           </div>
           <div className="mt-4">
             In my free time, I enjoy taking{" "}
-            <Link className="text-secondary" href="#photos">
+            <a
+              className="text-secondary"
+              href="#photos"
+              onClick={() => setCurrentSection("photos")}
+            >
               photos
-            </Link>{" "}
+            </a>{" "}
             with my digital and film cameras, playing competitive Valorant with
-            the Penn Retirement Home, going to the gym, watching anime, and
-            listening to <a className="text-secondary">banger music</a> 🤩
+            the Penn Retirement Home, playing jazz with Penn Jazz Ensemble,
+            going to the gym, watching anime, and listening to{" "}
+            <a
+              className="text-secondary"
+              href="https://open.spotify.com/user/21ot4oj3gvnedtvlhzlfetgoq?si=f95f92c382af4074"
+            >
+              banger music
+            </a>{" "}
+            🤩
           </div>
           <div className="mt-8 flex gap-x-2 gap-y-2 flex-wrap">
             <LinkBox

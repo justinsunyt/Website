@@ -10,7 +10,10 @@ export default function Project({
   imgSrc,
 }) {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center">
+    <div
+      id={name.toLowerCase()}
+      className="py-8 flex flex-col-reverse md:flex-row items-center"
+    >
       <div className="md:basis-2/3 flex-col">
         <div className="text-3xl">{name}</div>
         <div className="text-xl text-gray-400 mb-4">{subtitle}</div>

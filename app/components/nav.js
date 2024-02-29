@@ -1,12 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { useNav } from "../context/navProvider";
 import NavButton from "./navButton";
 
 export default function Nav() {
-  const { currentSection } = useNav();
   return (
     <motion.div
       className="fixed bottom-6 md:bottom-full md:top-6 transform -translate-x-1/2 left-1/2 text-white text-sm md:text-lg z-10"
