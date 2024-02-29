@@ -8,13 +8,12 @@ export default function NavButton({ title }) {
 
   return (
     <div
-      className={`rounded-4xl relative flex justify-center py-1 px-4 cursor-pointer ${
-        isSelected ? "text-black" : "text-white"
+      className={`rounded-4xl relative flex justify-center py-1 px-4 cursor-pointer transition duration-150 ${
+        isSelected ? "text-black" : "text-white hover:text-secondary"
       }`}
       onClick={() => {
         setCurrentSection(title.toLowerCase());
         const section = document.getElementById(title.toLowerCase());
-
         if (section) {
           window.scrollTo({
             top: section.offsetTop,

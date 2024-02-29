@@ -31,7 +31,7 @@ export default function Photos() {
   return (
     <div
       id="photos"
-      className="pt-12 md:pt-24 pb-12 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-16 md:pt-24 pb-12 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
       ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">

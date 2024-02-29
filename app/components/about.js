@@ -24,7 +24,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-16 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
       ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">
@@ -34,7 +34,7 @@ export default function About() {
         👋
       </div>
       <div className="mt-8 flex flex-col-reverse md:flex-row items-center">
-        <div className="flex flex-col">
+        <div className="md:basis-2/3 flex flex-col">
           <div className="text-xl text-gray-400">CS + Wharton @ UPenn M&T</div>
           <div className="mt-4">
             Yo! I'm Justin, a student at University of Pennsylvania's Jerome
@@ -97,11 +97,11 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="w-full h-full mb-8 ml-0 md:mb-0 md:ml-8 aspect-square relative">
+        <div className="w-full md:basis-1/3 h-auto aspect-square mb-8 ml-0 md:mb-0 md:ml-8 relative border border-transparent rounded-[2rem] bg-[linear-gradient(to_right,#d78dea,#2d84c8,#d78dea)] bg-[length:200%_auto] animate-gradient">
           <Image
             src={justin}
             fill={true}
-            alt="Capybara.AI"
+            alt="Justin"
             style={{
               objectFit: "contain",
               overflow: "hidden",

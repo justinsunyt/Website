@@ -1,8 +1,10 @@
 import { useRef, useEffect } from "react";
 import { useInView } from "framer-motion";
 import { useNav } from "../context/navProvider";
+import Project from "./project";
 import Image from "next/image";
-import capybara from "../../images/Capybara.png";
+import capybara from "../../images/Capybara.jpeg";
+import rajiv from "../../images/RajivAI.jpeg";
 import osus from "../../images/osus.png";
 import focal from "../../images/Focal.jpeg";
 import vivi from "../../images/vivi.jpg";
@@ -25,7 +27,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="pt-12 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
+      className="pt-16 md:pt-24 container mx-auto max-w-screen-xl px-6 flex flex-col justify-center items-start text-white"
       ref={ref}
     >
       <div className="text-6xl md:text-8xl font-bold">
@@ -34,42 +36,81 @@ export default function Projects() {
         </span>{" "}
         💻
       </div>
-      <a className="mt-8 flex items-center mb-12">
-        <div className="w-16 h-16 mr-4 aspect-square relative">
-          <Image
-            src={capybara}
-            fill={true}
-            alt="Capybara.AI"
-            style={{
-              objectFit: "contain",
-              overflow: "hidden",
-            }}
-          />
-        </div>
-        <div className="flex flex-col">
-          <div className="text-lg">
-            Capybara.AI <span className="text-sm">2023</span>
-          </div>
-          <div>AI college counselor</div>
-          <div className="text-sm">GPT-4, Next.js, FastAPI, Pinecone</div>
-        </div>
-      </a>
-      <a
-        className="flex items-center mb-12"
-        href="https://github.com/justinsunyt/rajivai-platform"
-      >
-        <div className="w-16 h-16 mr-4 aspect-square relative flex justify-center items-center text-5xl">
-          👨‍🏫
-        </div>
-        <div className="flex flex-col">
-          <div className="text-lg">
-            RajivAI <span className="text-sm">2023</span>
-          </div>
-          <div>Multi-agent LLM exam generator</div>
-          <div className="text-sm">GPT-4, Next.js, FastAPI</div>
-        </div>
-      </a>
-      <a
+      <div className="mt-16 flex flex-col gap-y-16">
+        <Project
+          name="Capybara.AI"
+          subtitle="The world's best AI college counselor"
+          description="Capybara.AI is the world’s most advanced AI college consultant.
+          Say goodbye to GPT hallucinations and private college
+          counseling gatekeeping, and generate better long-term recommendations than human counselors at 1% of the
+          cost. Powered by GPT-4 and a custom Pinecone embedding pipeline, the chat model analyzes specific needs to
+          generate individualized tips and strategies. With a suite of fine-tuned functions combined with vector
+          memory, web access, and document upload capabilities, the chat agent remembers user interactions
+          to choose the best tool for every interaction."
+          technologies={[
+            "GPT-4",
+            "Next.js",
+            "React",
+            "Typescript",
+            "FastAPI",
+            "Python",
+            "Supabase",
+            "Pinecone",
+            "Google Cloud",
+          ]}
+          links={[
+            {
+              name: "Coming soon",
+              icon: "zap",
+              left: "#d78dea",
+              right: "#9c8ade",
+            },
+          ]}
+          imgSrc={capybara}
+        />
+        <Project
+          name="RajivAI"
+          subtitle="Multi-agent LLM exam generator"
+          description="Built at Penn Apps XXIV, RajivAI is a multi-agent model 
+          designed to help professors and students generate exams.
+          Simply upload course materials such as lecture notes, specify topics, length, and types of questions,
+          and the model will generate a full-length exam akin to human-written materials."
+          technologies={[
+            "GPT-4",
+            "Next.js",
+            "React",
+            "Typescript",
+            "FastAPI",
+            "Python",
+            "Google Cloud",
+          ]}
+          links={[
+            {
+              name: "Website",
+              url: "https://rajiv.app",
+              icon: "zap",
+              left: "#d78dea",
+              right: "#9c8ade",
+            },
+            {
+              name: "Backend GitHub",
+              url: "https://github.com/justinsunyt/RajivAI-platform",
+              icon: "github",
+              left: "#9c8ade",
+              right: "#6387d3",
+            },
+            {
+              name: "Frontend GitHub",
+              url: "https://github.com/justinsunyt/RajivAI-web",
+              icon: "github",
+              left: "#6387d3",
+              right: "#2d84c8",
+            },
+          ]}
+          imgSrc={rajiv}
+        />
+      </div>
+      {/* <a
         className="flex items-center mb-12"
         href="https://github.com/benjmnxu/BirdGuess"
       >
@@ -203,7 +244,7 @@ export default function Projects() {
           <div>Student community forum</div>
           <div className="text-sm">React, Firebase</div>
         </div>
-      </a>
+      </a> */}
     </div>
   );
 }
