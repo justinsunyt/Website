@@ -126,13 +126,13 @@ export default function About() {
               left="#9c8ade"
               right="#6387d3"
             />
-            {/* <LinkBox
+            <LinkBox
               name="Resume"
-              url=""
+              url="https://drive.google.com/file/d/1cPr_BlpKA41UwxWjud13ZPL13eGW7GeT/view?usp=sharing"
               icon="file"
               left="#6387d3"
               right="#2d84c8"
-            /> */}
+            />
           </div>
         </div>
         <div className="w-full md:basis-1/3 h-auto aspect-square mb-8 ml-0 md:mb-0 md:ml-8 relative border border-transparent rounded-[2rem] bg-[linear-gradient(to_right,#d78dea,#2d84c8,#d78dea)] bg-[length:200%_auto] animate-gradient">
